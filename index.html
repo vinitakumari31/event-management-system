@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Registration Form</h1>
+        <form id="RegistrationForm" action="connect.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="event">Event:</label><br>
+            <select id="event" name="event" required>
+                <option value="event1">Viaje</option>
+                <option value="event2">Ariaro</option>
+                <option value="event3">ADW</option>
+            </select><br><br>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
